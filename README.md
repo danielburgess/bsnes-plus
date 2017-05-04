@@ -13,7 +13,7 @@ https://github.com/devinacker/bsnes-plus
 
 ## Building on Windows
 
-- Install mingw64/Qt package included in the repository. (qt-4.8.6-x64-mingw492r1-seh.exe)
+- Download and Install mingw64492rl-seh/Qt4.8.6 package. Download available here: https://1drv.ms/u/s!Ari2BhmuWQDji7UzaDxJOyxZYGMAWg
 - Make sure the Qt `bin` directory is in your system path
 - Run `mingw32-make`
 
