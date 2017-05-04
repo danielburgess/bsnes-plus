@@ -74,6 +74,7 @@ turboR("Turbo R", string() << "input." << configName << ".turboR") {
   attach(&up); attach(&down); attach(&left); attach(&right);
   attach(&b); attach(&a); attach(&y); attach(&x);
   attach(&l); attach(&r); attach(&select); attach(&start);
+  attach(&coinUp); attach(&jumper1); attach(&jumper2); attach(&jumper3);
   attach(&turboB); attach(&turboA); attach(&turboY); attach(&turboX);
   attach(&turboL); attach(&turboR);
 
