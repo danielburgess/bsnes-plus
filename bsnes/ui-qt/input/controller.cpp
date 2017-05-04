@@ -39,6 +39,10 @@ int16_t Gamepad::status(unsigned index, unsigned id) const {
     case SNES::Input::JoypadID::R: return r.cachedState | turboR.cachedState;
     case SNES::Input::JoypadID::Select: return select.cachedState;
     case SNES::Input::JoypadID::Start: return start.cachedState;
+	case SNES::Input::JoypadID::CoinUp: return coinUp.cachedState;
+	case SNES::Input::JoypadID::Jumper1: return jumper1.cachedState;
+	case SNES::Input::JoypadID::Jumper2: return jumper2.cachedState;
+	case SNES::Input::JoypadID::Jumper3: return jumper3.cachedState;
   }
   return 0;
 }
@@ -57,6 +61,10 @@ l("L", string() << "input." << configName << ".l"),
 r("R", string() << "input." << configName << ".r"),
 select("Select", string() << "input." << configName << ".select"),
 start("Start", string() << "input." << configName << ".start"),
+coinUp("Coin-up", string() << "input." << configName << ".coinUp"),
+jumper1("Jumper1", string() << "input." << configName << ".jumper1"),
+jumper2("Jumper2", string() << "input." << configName << ".jumper2"),
+jumper3("Jumper3", string() << "input." << configName << ".jumper3"),
 turboB("Turbo B", string() << "input." << configName << ".turboB"),
 turboA("Turbo A", string() << "input." << configName << ".turboA"),
 turboY("Turbo Y", string() << "input." << configName << ".turboY"),
@@ -82,6 +90,10 @@ turboR("Turbo R", string() << "input." << configName << ".turboR") {
     r.name = "KB0::C";
     select.name = "KB0::Apostrophe";
     start.name = "KB0::Return";
+	coinUp.name = "KB0::Q";
+	jumper1.name = "KB0::W";
+	jumper2.name = "KB0::E";
+	jumper3.name = "KB0::R";
   }
 }
 
