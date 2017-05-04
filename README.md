@@ -8,7 +8,7 @@ All that this version has added is a few extra button inputs so that I can test 
 My SuperFamicade project is here: https://hackaday.io/project/3121-super-famicade-hardcore-snes-arcade-hack
 
 
-## Check out the original repository
+## Check out the original repository 
 https://github.com/devinacker/bsnes-plus
 
 ## Building on Windows
