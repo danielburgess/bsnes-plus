@@ -12,7 +12,7 @@ struct TurboInput : DigitalInput {
 };
 
 struct Gamepad : InputGroup {
-  DigitalInput up, down, left, right, b, a, y, x, l, r, select, start;
+  DigitalInput up, down, left, right, b, a, y, x, l, r, select, start, coinUp, jumper1, jumper2, jumper3;
   TurboInput turboB, turboA, turboY, turboX, turboL, turboR;
   int16_t status(unsigned, unsigned) const;
   Gamepad(unsigned, const char*, const char*);
